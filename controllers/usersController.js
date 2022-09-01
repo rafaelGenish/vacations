@@ -50,7 +50,7 @@ async function logIn(req, res) {
             return res.status(401).json({ error: true, msg: "missing some info" })
         }
     } catch (error) {
-        res.status(500).send(error)
+        res.status(500).send(err+or)
     }
 }
 
